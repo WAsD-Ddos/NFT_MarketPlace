@@ -1,0 +1,29 @@
+// Sidebar
+.sidebar {
+  background-color: #1D1932;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 5%;
+  padding: 16px 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  transition: transform .3s ease;
+  &__logo {
+    margin-bottom: 50px;
+    img{ width: 30px; }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px 0;
+    &-item{ img{ width: 19px; } }
+  }
+  &__logout{ img{ width: 19px; } }
+  &__spacer{ flex: 1 1 auto; width: 100%; }
+}
