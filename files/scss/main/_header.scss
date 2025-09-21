@@ -1,0 +1,99 @@
+.header {
+  &__items {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.search {
+  position: relative;
+
+  &__field {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    cursor: text;
+    font-family: Poppins;
+    padding-left: 18%;
+    font-size: 16px;
+    color: #68676E;
+    background-color: #1e1a32;
+    width: rem(350);
+    height: rem(50);
+    border-radius: 10px;
+  }
+
+  &__button {
+    cursor: pointer;
+    position: absolute;
+    align-self: center;
+    background-color: #1e1a32;
+    width: rem(28);
+    margin-left: 22px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__hint {}
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, rem(30)));
+  gap: clamp(rem(4), 2vw, rem(8));
+  align-items: center;
+  justify-content: start;
+
+  &>* {
+    min-width: 0;
+  }
+
+  &__mode {
+    cursor: pointer;
+
+    &-item {
+      align-self: center;
+      background-color: #131129;
+      width: rem(28);
+
+      img {
+        width: rem(20);
+      }
+    }
+  }
+
+  &__bell {
+    cursor: pointer;
+
+    &-item {
+      align-self: center;
+      background-color: #131129;
+      width: rem(28);
+
+      img {
+        width: rem(17);
+      }
+    }
+  }
+
+  &__profile {
+    cursor: pointer;
+    padding-left: rem(15);
+
+    &-item {
+      align-self: center;
+      background-color: #131129;
+      width: rem(28);
+
+      img {
+        width: rem(40);
+      }
+    }
+  }
+}

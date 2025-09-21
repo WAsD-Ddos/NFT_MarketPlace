@@ -142,12 +142,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-/* main */
 .main {
+  font-family: "Poppins";
   width: 95%;
   margin: 20px 20px;
 }
-.main .header__items {
+.main .content {
+  margin-top: 40px;
+}
+.header__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,7 +166,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .search {
   position: relative;
-  font-family: "Poppins";
 }
 .search__field {
   display: -webkit-box;
@@ -252,4 +254,512 @@ h1, h2, h3, h4, h5, h6 {
 }
 .tools__profile-item img {
   width: 2.5rem;
+}
+
+.topsection {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+.topsection__discover {
+  padding: 20px;
+  height: 200px;
+  border-radius: 15px;
+  background-image: url(/img/content_topsection_discover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  isolation: isolate;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.topsection__discover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: rgba(111, 79, 242, 0.5);
+  z-index: -1;
+}
+.topsection__nft {
+  border-radius: 15px;
+  background-color: #1D1932;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.discover__title {
+  line-height: 30px;
+  font-size: clamp(1rem, 2vw, 1.625rem);
+  font-weight: 500;
+  text-align: start;
+  max-width: 300px;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.discover__subtitle {
+  padding-top: 15px;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.55;
+  position: relative;
+  z-index: 1;
+}
+.discover__buttons {
+  padding-top: 20px;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.discover__buttons-button {
+  background-color: #6F4FF2;
+  width: 120px;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.discover__buttons-button:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.discover__buttons-button:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.nft__topimg {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 240px;
+  height: 160px;
+}
+.nft__topimg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.nft__content {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.nft__avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.nft__avatar-img {
+  padding-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.nft__avatar-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.nft__avatar-name {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.nft__title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.nft__dopitems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nft__actionTime {
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.nft__actionTime-text {
+  padding-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 200;
+}
+.nft__actionTime-time {
+  color: #68676E;
+  font-size: 14px;
+}
+.nft__currentBit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.nft__currentBit-text {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 5px;
+}
+.nft__currentBit-text__eth {
+  color: #6F4FF2;
+  font-size: 12px;
+}
+.nft__currentBit-text__eth-dop {
+  padding-top: 8px;
+  text-align: end;
+  color: #68676E;
+  font-size: 14px;
+}
+.nft__buttons {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 20px;
+}
+.nft__buttons-button {
+  background-color: #6F4FF2;
+  width: 120px;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.nft__buttons-button:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.nft__buttons-button:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.nft__buttons-button.placeBid {
+  background-color: #6F4FF2;
+  color: #ffffff;
+}
+.nft__buttons-button.details {
+  background-color: #DC3546;
+  color: #ffffff;
+}
+
+.btn-primary {
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #6F4FF2;
+  color: #ffffff;
+  width: 140px;
+  height: 40px;
+}
+.btn-primary:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.btn-primary:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #5a3dd9;
+}
+.btn-secondary {
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  color: #6F4FF2;
+  border: 2px solid #6F4FF2;
+  width: 140px;
+  height: 40px;
+}
+.btn-secondary:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.btn-secondary:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+  background-color: #6F4FF2;
+  color: #ffffff;
+}
+.btn-outline {
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  width: 140px;
+  height: 40px;
+}
+.btn-outline:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.btn-outline:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background-color: #ffffff;
+  color: #1D1932;
+}
+.btn-small {
+  width: 100px;
+  height: 32px;
+  font-size: 14px;
+}
+.btn-large {
+  width: 180px;
+  height: 48px;
+  font-size: 18px;
+}
+.btn-full {
+  width: 100%;
+  height: 40px;
+}
+
+.nft-button {
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #6F4FF2;
+  color: #ffffff;
+  width: 120px;
+  height: 36px;
+  font-size: 14px;
+}
+.nft-button:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.nft-button:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.nft-button:hover {
+  background-color: #5a3dd9;
+}
+.nft-button.place-bid {
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #6F4FF2;
+  color: #ffffff;
+}
+.nft-button.place-bid:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.nft-button.place-bid:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.nft-button.place-bid:hover {
+  background-color: #5a3dd9;
+}
+.nft-button.details {
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  color: #6F4FF2;
+  border: 2px solid #6F4FF2;
+}
+.nft-button.details:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.nft-button.details:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.nft-button.details:hover {
+  background-color: #6F4FF2;
+  color: #ffffff;
 }
