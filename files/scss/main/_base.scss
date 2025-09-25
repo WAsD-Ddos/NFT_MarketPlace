@@ -5,6 +5,7 @@
 .container{
   max-width: rem(1200);
   margin: 0 auto;
+  padding: 20px 10px;
 }
 
 .wrapper{
@@ -13,4 +14,23 @@
   height: 100%;
   background-color: #131129;
   font-family: "Poppins";
+}
+
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: rem(900);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: rem(700);
+  }
+}
+
+@media screen and (max-width: 480) {
+  .container {
+    max-width: rem(500);
+  }
 }

@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="files/style.css">
 </head>
 
-<body>
+<body style="background-color: #131129;">
 
 
 	<div class="wrapper">
@@ -47,6 +47,9 @@
 				<header class="header">
 
 					<div class="header__items">
+						<button class="burger" type="button" aria-label="Open menu">
+							<img src="img/header__logo.png" alt="menu">
+						</button>
 
 						<form class="search">
 							<div class="search__field">
@@ -84,66 +87,47 @@
 
 				</header>
 
-				<div class="content">
-					<div class="content__items">
-						<section class="topsection">
-							<div class="topsection__discover">
-								<div class="discover__title">Discover, Collect, Sell and Create your NFT</div>
-								<div class="discover__subtitle">
-									Digital marketplace for crypto collectibles and
-									non fungable tokens
-								</div>
-								<div class="discover__buttons">
-									<a href="#"><button class="discover__buttons-button explore">Explore</button></a>
-									<a href="#"><button class="discover__buttons-button create"
-											style="background-color: #DC3546;">Create</button></a>
-								</div>
-							</div>
-							<div class="topsection__nft">
-								<div class="nft__topimg"><img src="/img/content_topsection_topNft.png" alt="">
-								</div>
-								<div class="nft__content">
-									<div class="nft__avatar">
-										<div class="nft__avatar-img"><img src="/img/content_topsection_nft-avatar.png"
-												alt=""></div>
-										<div class="nft__avatar-name">John Abraham</div>
-									</div>
-									<div class="nft__title">Birghten LQ</div>
-									<div class="nft__dopitems">
+<section class="goods">
+  <div class="goods__items">
+    <div class="goods__statusrow">
+      <div class="goods__title">Trending Bids</div>
+      <div class="goods__button-group">			
+        <div class="goods__button">
+          <button type="button" value="all" class="goods__button-item goods__button-item--choosed">All</button>
+        </div>
+        <div class="goods__button">
+          <button type="button" value="art" class="goods__button-item">Art</button>
+        </div>
+        <div class="goods__button">
+          <button type="button" value="pixel" class="goods__button-item">Pixel</button>
+        </div>
+      </div>
+    </div>
 
-										<div class="nft__actionTime">
-											<div class="nft__actionTime-text">Auction time</div>
-											<div class="nft__actionTime-time">3h 1m 50s</div>
-										</div>
+    <div class="goods__item" id="dog-nft" type_of="art">
+      <div class="goods__img">
+        <img src="/img/goods_items-nft-base.png" alt="">
+      </div>
+      <div class="goods__liquid">Liquid Wave</div>
+      <div class="goods__info">
+        <div class="goods__actiontime">
+          Auction time
+          <div class="goods__actiontime-item" action="false">3h 1m 50s</div>
+        </div>
+        <div class="goods__currentbid">
+          Current Bid
+          <div class="goods__currentbid-item" current_price="false">0.15 ETH</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-										<div class="nft__currentBit">
-											<div class="nft__currentBit-text">
-												Current Bid : <div class="nft__currentBit-text__eth">0.05 ETH
-												</div>
-											</div>
-											<div class="nft__currentBit-text__eth-dop">0.15 ETH</div>
-											
-										</div>
-									</div>
-									<div class="nft__buttons">
-										<a href="#"><button class="nft__buttons-button placeBid">Explore</button></a>
-										<a href="#"><button class="nft__buttons-button details"
-												style="background-color: #DC3546;">Create</button></a>
-									</div>
-								</div>
-							</div>
-						</section>
 
-						<section class="statusrow"></section>
 
-						<section class="nftgrid"></section>
+	</div>
 
-					</div>
-				</div>
-
-			</div>
-
-		</section>
+	</section>
 	</div>
 
 
