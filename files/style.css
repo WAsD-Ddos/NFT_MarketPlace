@@ -388,14 +388,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 2.3125rem;
   }
 }
-.button__choosed {
-  background-color: #6F4FF2 !important;
-}
-
-.card__hidenned {
-  display: none !important;
-}
-
 .goods {
   margin: 30px;
   margin-top: 40px;
@@ -460,7 +452,7 @@ h1, h2, h3, h4, h5, h6 {
 .goods__card__img img {
   width: 100%;
 }
-.goods__card__liquid {
+.goods__card__title {
   padding-top: 25px;
   padding-bottom: 15px;
   font-size: 18px;
@@ -520,4 +512,15 @@ h1, h2, h3, h4, h5, h6 {
   .goods__title {
     font-size: 16px;
   }
+}
+.goods__dopInfo {
+  display: none;
+}
+
+.button__choosed {
+  background-color: #6F4FF2 !important;
+}
+
+.card__hidenned {
+  display: none !important;
 }
